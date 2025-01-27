@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Service Request Form</title>
+</head>
+<body>
+    <h1>Freelance Service Request Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="service">Service Required:</label><br>
+        <input type="text" id="service" name="service" placeholder="e.g., Graphic Design"><br><br>
+
+        <label for="deadline">Project Deadline:</label><br>
+        <input type="date" id="deadline" name="deadline"><br><br>
+
+        <label for="color">Preferred Color Scheme:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="budget">Budget (USD):</label><br>
+        <input type="number" id="budget" name="budget" min="1" step="0.01"><br><br>
+
+        <label for="reference">Upload Reference File:</label><br>
+        <input type="file" id="reference" name="reference"><br><br>
+
+        <label for="priority">Priority Level:</label><br>
+        <input type="radio" id="high" name="priority" value="high">
+        <label for="high">High</label><br>
+        <input type="radio" id="medium" name="priority" value="medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="low" name="priority" value="low">
+        <label for="low">Low</label><br><br>
+
+        <label for="description">Project Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" placeholder="Briefly describe your project"></textarea><br><br>
+
+        <input type="submit" value="Submit Request">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
